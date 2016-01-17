@@ -27,5 +27,13 @@ describe('names', function () {
       var randomItem = starWars.random();
       expect(starWars.all).to.include(randomItem);
     });
+
+    it('should be good', function () {
+      var items = starWars.random(3);
+      expect(items).to.have.length(3);
+      items.forEach(function (item) {
+        expect(starWars.all).to.include(item);
+      });
+    });
   });
 });
