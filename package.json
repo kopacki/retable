@@ -1,14 +1,16 @@
 {
   "name": "retable",
-  "version": "0.3.0-beta.0",
+  "version": "0.0.0-semantic",
   "description": "The ultimate table library with React.js",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "git-cz",
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hckrmoon/retable.git"
+    "url": "https://github.com/hckrmoon/retable.git"
   },
   "keywords": [
     "table",
@@ -22,5 +24,15 @@
   "homepage": "https://github.com/hckrmoon/retable#readme",
   "dependencies": {
     "unique-random-array": "1.0.0"
+  },
+  "devDependencies": {
+    "chai": "3.4.1",
+    "commitizen": "2.5.0",
+    "cz-conventional-changelog": "1.1.5",
+    "mocha": "2.3.4",
+    "semantic-release": "^4.3.5"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
