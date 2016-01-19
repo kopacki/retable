@@ -1,6 +1,6 @@
 {
   "name": "retable",
-  "version": "0.0.0-semantic",
+  "version": "0.0.0-semantically-relaese",
   "description": "The ultimate table library with React.js",
   "main": "src/index.js",
   "scripts": {
