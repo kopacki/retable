@@ -27,13 +27,17 @@
     "unique-random-array": "1.0.0"
   },
   "devDependencies": {
+    "babel": "6.3.26",
     "chai": "3.4.1",
     "commitizen": "2.5.0",
     "cz-conventional-changelog": "1.1.5",
     "mocha": "2.3.4",
-    "semantic-release": "^4.3.5"
+    "semantic-release": "^4.3.5",
+    "webpack": "1.12.11"
   },
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
