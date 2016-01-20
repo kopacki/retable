@@ -2,8 +2,11 @@
   "name": "retable",
   "version": "0.5.0-placeholder",
   "description": "The ultimate table library with React.js",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "prebuild": "rm -rf dist && mkdir dist",
+    "build": "babel src/index.js -o dist/index.js",
+    "postbuild": "cp src/hello.json dist/hello.json",
     "cmt": "git-cz",
     "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
@@ -30,6 +33,7 @@
   },
   "devDependencies": {
     "babel": "6.3.26",
+    "babel-cli": "6.4.5",
     "chai": "3.4.1",
     "codecov.io": "0.1.6",
     "commitizen": "2.5.0",
