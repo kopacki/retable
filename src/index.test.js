@@ -2,8 +2,8 @@
  * Created by youngmoon on 1/18/16.
  */
 
-var expect = require('chai').expect;
-var starWars = require('./index');
+import { expect } from'chai';
+import starWars from './index';
 
 describe('names', function () {
   describe('all', function () {

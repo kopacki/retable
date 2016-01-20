@@ -1,5 +1,6 @@
-var hello = require('./hello.json');
-var unique = require('unique-random-array');
+import hello from './hello.json';
+import unique from 'unique-random-array';
+
 var getRandomItem = unique(hello);
 
 module.exports = {

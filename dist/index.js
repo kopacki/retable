@@ -1,9 +1,19 @@
-var hello = require('./hello.json');
-var unique = require('unique-random-array');
-var getRandomItem = unique(hello);
+'use strict';
+
+var _hello = require('./hello.json');
+
+var _hello2 = _interopRequireDefault(_hello);
+
+var _uniqueRandomArray = require('unique-random-array');
+
+var _uniqueRandomArray2 = _interopRequireDefault(_uniqueRandomArray);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var getRandomItem = (0, _uniqueRandomArray2.default)(_hello2.default);
 
 module.exports = {
-	all: hello,
+	all: _hello2.default,
 	random: random
 };
 
